@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -13,8 +13,8 @@
 		<p id="demo1"></p>	
 	</div>
 	<div>
-		<input type="text" id='txt1' name="" value="২৩৪"><br>
-		<input type="text" id='txt2' name="" value="০৯"><br>
+		Amount: <input type="text" id='txt1' name="" value="২৩৪"><br>
+		Vat % :<input type="text" id='txt2' name="" value="০৯"><br>
 		<button type="submit" text='submit' id="btn1" onclick="cal()">submit</button><br>
 		<label id="lbl1"></label>
 	</div>
@@ -23,7 +23,6 @@
 			var a=document.getElementById("txt1").value;
 			var b=document.getElementById("txt2").value;
 			var c=a+'+'+b;
-			//bdmath(c);
 			d=bdmath('((('+a+')/100)*'+b+')+'+a);
 			document.getElementById("lbl1").innerHTML='Total+Vat= '+d;
 		}
