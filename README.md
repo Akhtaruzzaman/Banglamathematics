@@ -26,3 +26,6 @@ function call() {
         document.getElementById("lbl2").innerHTML = 'Total+Vat= '+d;
     }  
 </code></pre>
+
+
+[Js fiddle](//jsfiddle.net/mdakhtaruzzaman/515k7a8m/4/embedded/)
