@@ -5,15 +5,15 @@ which is bdmath and passes the parameter. (parameter must be as string)
 Example:
 var result=bdmath('৫+৪');
 
+<p>Js code:</p>
 
-
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<iframe width="100%" height="300" src="//jsfiddle.net/mdakhtaruzzaman/515k7a8m/4/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-</body>
-</html>
+<pre><code>
+function call() {
+        var a = document.getElementById("txt1").value;
+        var b = document.getElementById("txt2").value;
+        c = bdmath('(((' + a + ')/100)*' + b + ')+' + a);
+        d = bdmath('(((' + a + ')/100)*' + b + ')+' + a,'২');
+        document.getElementById("lbl1").innerHTML = 'Total+Vat= '+c;
+        document.getElementById("lbl2").innerHTML = 'Total+Vat= '+d;
+    }  
+</code></pre>
