@@ -7,4 +7,13 @@ var result=bdmath('৫+৪');
 
 
 
-<script async src="//jsfiddle.net/mdakhtaruzzaman/515k7a8m/4/embed/"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<iframe width="100%" height="300" src="//jsfiddle.net/mdakhtaruzzaman/515k7a8m/4/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+</body>
+</html>
