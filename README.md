@@ -33,4 +33,4 @@ var result=bdmath('৫+৪');
 </code></pre>
 
 
-[Js fiddle](//jsfiddle.net/mdakhtaruzzaman/515k7a8m/19/embed/)
+[Js fiddle](https://jsfiddle.net/mdakhtaruzzaman/515k7a8m/19/)
