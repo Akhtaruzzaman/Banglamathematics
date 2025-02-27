@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <script src="unicodemath.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="/js/unicodemath.js" type="text/javascript"></script>
+    <script src="/js/avro-v1.1.4.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
@@ -15,20 +17,21 @@
             <div class="row form-group">
                 <div class="col-md-1"> Amount:</div>
                 <div class="col-md-3">
-                    <input type="text" id='txt1' name="" class="form-control" value="২৩৪">
+                    <input type="text" id='txt1' name="" class="form-control avro-text" value="২৩৪">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-1">Vat % :</div>
                 <div class="col-md-3">
-                    <input type="text" id='txt2' name="" class="form-control" value="৯.৬১">
+                    <input type="text" id='txt2' name="" class="form-control avro-text" value="৯.৬১">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-1">
                 </div>
                 <div class="col-md-3">
-                	 <button type="submit" text='submit' class="form-control btn-primary" id="btn1" onclick="cal()">submit</button>
+                    <button type="submit" text='submit' class="form-control btn-primary" id="btn1"
+                        onclick="cal()">submit</button>
                 </div>
                 <div class="col-md-3">
                 </div>
@@ -37,7 +40,7 @@
                 <div class="col-md-1">
                 </div>
                 <div class="col-md-3">
-                Without Decimal Parameter
+                    Without Decimal Parameter
                 </div>
                 <div class="col-md-3">
                     <label id="lbl1"></label>
@@ -47,7 +50,7 @@
                 <div class="col-md-1">
                 </div>
                 <div class="col-md-3">
-                With Decimal Parameter
+                    With Decimal Parameter
                 </div>
                 <div class="col-md-3">
                     <label id="lbl2"></label>
@@ -56,14 +59,19 @@
         </div>
     </div>
     <script>
-    function cal() {
-        var a = document.getElementById("txt1").value;
-        var b = document.getElementById("txt2").value;
-        c = bdmath('(((' + a + ')/100)*' + b + ')+' + a);
-        d = bdmath('(((' + a + ')/100)*' + b + ')+' + a,'২');
-        document.getElementById("lbl1").innerHTML = 'Total+Vat= '+c;
-        document.getElementById("lbl2").innerHTML = 'Total+Vat= '+d;
-    }
+        $(function () {
+            $('.avro-text').avro();
+        });
+        function cal() {
+            var a = $("#txt1").val();
+            var b = $("#txt2").val();
+            var c = bdmath(`(((${a})/100)*${b})+${a}`);
+            var d = bdmath(`(((${a})/100)*${b})+${a}`, '২');
+
+            $("#lbl1").html('Total+Vat= ' + c);
+            $("#lbl2").html('Total+Vat= ' + d);
+        }
+
     </script>
 </body>
 
