@@ -11,9 +11,9 @@ var result=bdmath('৫+৪');
 <p>include js library file:</p>
 
 <pre><code>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
 <script src="/js/unicodemath.js" type="text/javascript"></script>
 <script src="/js/avro-v1.1.4.min.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
 </code></pre>
 
 <p>Js code:</p>
